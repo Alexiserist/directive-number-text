@@ -1,6 +1,11 @@
 # DirectiveInput
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+this project is about make a directive to validate a input form.
+You cannot type a special characters, Not allowing space text in start and the end or Not allowing space between words.
+example 
+    "Test Directive" => "TestDirective"
+    "  Test   Directive  " => "TestDirective"
+
 
 ## Development server
 
