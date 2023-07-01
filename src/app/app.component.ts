@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directive-input';
+  dataForm : FormGroup;
+
+  constructor(
+    private formBuilder:FormBuilder,
+
+  ){
+    this.dataForm = this.formBuilder.group({
+      input: [null],
+      input2: [null],
+
+    })
+  }
 }
